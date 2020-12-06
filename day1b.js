@@ -6,13 +6,16 @@ let inputDataList = inputData.split("\n").map(value => parseInt(value));
 
 let i;
 let j;
+let k;
 
 for (i of inputDataList) {
   for (j of inputDataList) {
-    if (i + j == 2020) {
-      console.log(`${i} + ${j} = ${i + j}`);
-      console.log(`${i} * ${j} = ${i * j}`);
-      return;
+    for (k of inputDataList) {
+      if (i + j + k == 2020) {
+        console.log(`${i} + ${j} + ${k} = ${i + j + k}`);
+        console.log(`${i} * ${j} * ${k} = ${i * j * k}`);
+        return;
+      }
     }
   }
 }
