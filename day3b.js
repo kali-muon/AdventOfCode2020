@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const inputData = fs.readFileSync("./day3data").toString();
 const hillLevels = inputData.split("\n");
-const slopes = [[1,1],[3,1],[5,1],[7,1],[1,2]]
+const slopes = [[1,1],[3,1],[5,1],[7,1],[1,2]];
 
 let treeCounter = 0;
 
