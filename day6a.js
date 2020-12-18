@@ -12,7 +12,7 @@ const groups = inputData.split('\n\n').map(x => removeCharacter(x, '\n')).map(y 
 
 //console.log(groups[0]);
 
-let numOfQuestions = []
+let numOfQuestions = [];
 
 for(let i of groups) {
   let questionsAsked = [];

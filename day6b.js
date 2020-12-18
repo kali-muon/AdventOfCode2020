@@ -19,7 +19,6 @@ const groups = inputData.split('\n\n').map(x => x.split('\n').map(y => y.split('
 let numOfQuestions = [];
 
 // probably could have done this with another reduce tbh
-
 for(let i of groups) {
   numOfQuestions.push(i.reduce((a,b) => getMatching(a,b)).length);
 }
