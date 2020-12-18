@@ -3,11 +3,6 @@
 const fs = require('fs');
 const inputData = fs.readFileSync("./day6data").toString();
 
-// Recycled from my day 1 solution
-function removeCharacter(str, character) {
-  return(str.split("").map(x => x.replace(character, "")).join(""));
-}
-
 function getMatching(arr1, arr2) {
   let matchingValues = [];
   for(let i of arr1) {
@@ -21,7 +16,7 @@ function getMatching(arr1, arr2) {
 
 const groups = inputData.split('\n\n').map(x => x.split('\n').map(y => y.split('')));
 
-let numOfQuestions = []
+let numOfQuestions = [];
 
 // probably could have done this with another reduce tbh
 
